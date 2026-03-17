@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "v2-etherfi",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/etherfi-favicon-1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://v2-etherfi.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://v2-etherfi.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "pxsqqpoksw",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "6.1.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Etherfi - Crypto Staking Platform | Ether FI",
+        "meta_descr": "Ether.fi is a decentralized liquid restaking protocol on Ethereum that lets users stake ETH, earn rewards, and maintain liquidity through eETH while retaining control of their assets.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://www.ether.fi/\"><img src=\"@PROJECT_PATH@/assets/images/ether-fi.png\" alt=\"ether.fi\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "ve88g50Imp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n            <b><a href=\"https://www.ether.fi/\" class=\"text-primary\">Etherfi </a>- Crypto Staking Platform | Ether FI</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://www.ether.fi/\" class=\"text-primary\">Ether.fi</a>: A Comprehensive Overview of the Liquid Restaking Protocol</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://www.ether.fi/\" class=\"text-primary\">Ether.fi</a> is a decentralized finance (DeFi) protocol built on Ethereum that focuses on <b>liquid staking and restaking</b>, allowing users to earn rewards on their ETH while maintaining flexibility and control. Since its emergence, it has become one of the fastest-growing staking platforms, introducing innovations that reshape how Ethereum staking works.<br><br><b>1. What Is <a href=\"https://www.ether.fi/\" class=\"text-primary\">Ether.fi</a> ?<br></b>Ether.fi is a <b>non-custodial staking protocol</b> that enables users to stake Ethereum (ETH) while retaining control of their private keys—a key distinction from many traditional staking services.<br><br>Unlike custodial platforms, where assets are handed over to a third party, Ether.fi allows users to <b>maintain ownership and control</b>, reducing counterparty risk and improving decentralization.<br><br>At its core, <a href=\"https://www.ether.fi/\" class=\"text-primary\">Ether.fi</a> combines:<br><b>. Liquid staking<br>. Restaking (via EigenLayer)<br>. DeFi composability</b><br><br><b>2. How Ether.fi Works<br>a. Staking ETH<br></b>Users deposit ETH into the protocol, which is then used to run validators on the Ethereum network. In return, users earn staking rewards generated by network validation.<br><br><b>b. Liquid Staking (eETH)<br></b>When users stake ETH, they receive a liquid token called <b>eETH</b>. This token:<br><br><b>.&nbsp; </b>Represents the staked ETH<br><b>.&nbsp; </b>Accrues rewards over time<br><b>.&nbsp; </b>Can be used across DeFi applications<br><br>This eliminates the traditional drawback of staking—<b>locked capital.</b><br><br><b>c. Restaking via EigenLayer<br></b><a href=\"https://www.ether.fi/\" class=\"text-primary\">Ether.fi</a> integrates <b>restaking</b>, allowing staked ETH to secure additional protocols beyond Ethereum itself. This generates <b>multiple reward streams</b>, including:<br><br><b>. </b>Ethereum staking rewards<br><b>. </b>Restaking rewards (EigenLayer points)<br><b>. </b>Loyalty incentives<br><b>. </b>DeFi yield opportunities<br><br><b>d. Validator Ownership Model<br></b>A unique feature is that users control validator keys, rather than delegating them fully to operators. This enhances decentralization and security.<br><br><b>3. Key Features<br>• Non-Custodial Design<br></b>Users retain full control of their assets and validator keys, reducing reliance on centralized entities.<br><br><b>• Liquid Restaking Token (eETH)<br></b>eETH enables:<br><b>.&nbsp; </b>Continuous reward accumulation<br><b>.&nbsp; </b>Participation in DeFi (lending, liquidity pools, etc.)<br><b>.&nbsp; </b>Improved capital efficiency<br><br><b>• Native Restaking<br></b>Rewards are automatically compounded through restaking, maximizing yield potential without manual intervention.<br><br><b>• Distributed Validator Technology (DVT)<br></b>Enhances network resilience by distributing validator responsibilities across multiple operators.<br><br><b>• Governance Token (ETHFI)<br></b><a href=\"https://www.ether.fi/\" class=\"text-primary\">Ether.fi</a> has a governance token, ETHFI, allowing holders to vote on protocol decisions and upgrades.<br><br><b>4. Products and Ecosystem<br></b><a href=\"https://www.ether.fi/\" class=\"text-primary\">Ether.fi</a> is more than just a staking platform—it is evolving into a broader crypto-financial ecosystem:<br><br><b>. Liquid Vaults:</b> Automated yield strategies for users seeking optimized returns<br><b>. Crypto-backed card:</b> Enables spending of crypto assets in real-world transactions<br><b>. DeFi integrations:</b> eETH can be used across multiple protocols<br><br>Some estimates suggest the platform has reached <b>Billions in total value locked (TVL)</b>, placing it among the largest DeFi protocols.<br><br><b>5. Advantages<br>✔ Higher Yield Potential<br></b>By combining staking + restaking + DeFi, users can access multiple income streams simultaneously.<br><br><b>✔ Liquidity<br></b>Unlike traditional staking, assets are not locked—users can trade or use eETH freely.<br><br><b>✔ Decentralization<br></b>User-controlled keys and distributed validators reduce centralization risks.<br><br><b>✔ Ease of Use<br></b>Automated restaking and vault strategies simplify yield optimization.<br><br><b>6. Risks and Considerations<br></b>Despite its innovation, Ether.fi carries risks typical of DeFi:<br><br><b>1. Smart contract risk:</b> Bugs or exploits could lead to losses<br><b>2. Slashing risk:</b> Validators may be penalized for misbehavior<br><b>3. Restaking risk:</b> Additional exposure through EigenLayer can amplify downside<br><b>4. Market risk:</b> Token values (ETH, eETH, ETHFI) can fluctuate<br><br>Additionally, restaking is a relatively new concept, meaning its long-term implications are still being explored.<br><br><b>7. Growth and Market Position<br></b><a href=\"https://www.ether.fi/\" class=\"text-primary\">Ether.fi</a> has experienced rapid adoption, driven by the rise of <b>liquid restaking narratives</b> in crypto. Its differentiation lies in:<br><br><b>.&nbsp; &nbsp;</b>Non-custodial validator ownership<br><b>.&nbsp; &nbsp;</b>Integration with EigenLayer<br><b>.&nbsp; &nbsp;</b>Strong DeFi composability<br><br>This positions Ether.fi as a competitor to established liquid staking platforms like Lido, while expanding into a newer category: <b>restaking protocols.</b><br><br><b>Conclusion</b><br><a href=\"https://www.ether.fi/\" class=\"text-primary\">Ether.fi</a> represents a significant evolution in Ethereum staking by combining <b>self-custody, liquidity, and enhanced yield mechanisms.</b> Its introduction of liquid restaking through eETH allows users to maximize returns while maintaining flexibility—something traditional staking cannot offer.<br><br>However, like all DeFi innovations, it comes with trade-offs, particularly around complexity and risk. For users willing to navigate these, <a href=\"https://www.ether.fi/\" class=\"text-primary\">Ether.fi</a> offers a powerful toolkit for participating in the Ethereum ecosystem’s next phase.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "ve88gOSHNs",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
